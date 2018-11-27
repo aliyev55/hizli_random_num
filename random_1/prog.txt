@@ -1,0 +1,296 @@
+
+var sny = document.getElementsByClassName('scds');
+var _p4 = document.getElementsByTagName('p');
+
+var insrt = document.getElementById('inpt');
+var snds=0;
+
+// window.addEventListener('click',function(ev){
+//     var tru=0;
+//     var slc_obj =ev.target;
+  
+//      var slc_id = slc_obj.getAttribute('id');
+         
+    
+  
+//      if(slc_obj.tagName=='BUTTON'&& slc_id=='btn5'){   
+         
+          
+//           snds=5;
+//           clearInterval(setInterval(function(){
+    
+//             document.getElementById('inpt').value=snds;
+           
+//             if(snds==0){
+//                 clearInterval(inter);
+          
+          
+//                 for(var i=0;i< _p4.length;i++){
+                  
+//                     _p4[i].className = _p4[i].className.replace(" show","");
+//                     _p4[i].className+=" vsbl";
+                
+          
+          
+//                 }
+          
+          
+//             }
+//             snds --;
+          
+//           },1000));
+//            setInterval(function(){
+    
+//             document.getElementById('inpt').value=snds;
+           
+//             if(snds==0){
+//                 clearInterval(setInterval(function(){
+    
+//                     document.getElementById('inpt').value=snds;
+                   
+//                     if(snds==0){
+//                         clearInterval(inter);
+                  
+                  
+//                         for(var i=0;i< _p4.length;i++){
+                          
+//                             _p4[i].className = _p4[i].className.replace(" show","");
+//                             _p4[i].className+=" vsbl";
+                        
+                  
+                  
+//                         }
+                  
+                  
+//                     }
+//                     snds --;
+                  
+//                   },1000));
+          
+          
+//                 for(var i=0;i< _p4.length;i++){
+                  
+//                     _p4[i].className = _p4[i].className.replace(" show","");
+//                     _p4[i].className+=" vsbl";
+                
+          
+          
+//                 }
+          
+          
+//             }
+//             snds --;
+          
+//           },1000);
+  
+  
+  
+  
+//      }
+
+//      if(slc_obj.tagName=='BUTTON'&& slc_id=='btn10'){   
+       
+//         snds=10;
+//         clearInterval(setInterval(function(){
+    
+//             document.getElementById('inpt').value=snds;
+           
+//             if(snds==0){
+//                 clearInterval(inter);
+          
+          
+//                 for(var i=0;i< _p4.length;i++){
+                  
+//                     _p4[i].className = _p4[i].className.replace(" show","");
+//                     _p4[i].className+=" vsbl";
+                
+          
+          
+//                 }
+          
+          
+//             }
+//             snds --;
+          
+//           },1000));
+//         setInterval(function(){
+  
+//           document.getElementById('inpt').value=snds;
+         
+//           if(snds==0){
+//               clearInterval(setInterval(function(){
+    
+//                 document.getElementById('inpt').value=snds;
+               
+//                 if(snds==0){
+//                     clearInterval(inter);
+              
+              
+//                     for(var i=0;i< _p4.length;i++){
+                      
+//                         _p4[i].className = _p4[i].className.replace(" show","");
+//                         _p4[i].className+=" vsbl";
+                    
+              
+              
+//                     }
+              
+              
+//                 }
+//                 snds --;
+              
+//               },1000));
+        
+        
+//               for(var i=0;i< _p4.length;i++){
+                
+//                   _p4[i].className = _p4[i].className.replace(" show","");
+//                   _p4[i].className+=" vsbl";
+              
+        
+        
+//               }
+        
+        
+//           }
+//           snds --;
+        
+//         },1000)
+//     };
+
+//         if(slc_obj.tagName=='BUTTON'&& slc_id=='btn20'){     
+//             snds=20;
+//             //this.console.log(20);
+//             clearInterval(setInterval(function(){
+    
+//                 document.getElementById('inpt').value=snds;
+               
+//                 if(snds==0){
+//                     clearInterval(inter);
+              
+              
+//                     for(var i=0;i< _p4.length;i++){
+                      
+//                         _p4[i].className = _p4[i].className.replace(" show","");
+//                         _p4[i].className+=" vsbl";
+                    
+              
+              
+//                     }
+              
+              
+//                 }
+//                 snds --;
+              
+//               },1000));
+//              setInterval(function(){
+      
+//               document.getElementById('inpt').value=snds;
+             
+//               if(snds==0){
+//                   clearInterval(setInterval(function(){
+    
+//                     document.getElementById('inpt').value=snds;
+                   
+//                     if(snds==0){
+//                         clearInterval(inter);
+                  
+                  
+//                         for(var i=0;i< _p4.length;i++){
+                          
+//                             _p4[i].className = _p4[i].className.replace(" show","");
+//                             _p4[i].className+=" vsbl";
+                        
+                  
+                  
+//                         }
+                  
+                  
+//                     }
+//                     snds --;
+                  
+//                   },1000));
+            
+            
+//                   for(var i=0;i< _p4.length;i++){
+                    
+//                       _p4[i].className = _p4[i].className.replace(" show","");
+//                       _p4[i].className+=" vsbl";
+                  
+            
+            
+//                   }
+            
+            
+//               }
+//               snds --;
+            
+//             },1000);
+
+
+
+
+//    }
+
+
+
+
+
+
+//    })
+
+
+  function test(a)
+{ 
+    b =a ;
+   clearInterval(setInterval(function(){
+
+    console.log(b);
+    b--;
+            
+      
+
+   },1000));
+
+   if(b>0) {
+       setInterval(function(){
+
+    console.log(b);
+    b--;
+            
+
+
+   },1000);
+}
+   else {
+    clearInterval(setInterval(function(){
+
+        console.log(b);
+        b--;
+                
+          
+    
+       },1000));
+
+   }
+
+
+
+}
+
+
+function fun(b){
+   c=b;
+    console.log(c);
+  c--; 
+
+  if(c<0){
+      break;
+  }
+            
+
+
+   };
+
+  
+
