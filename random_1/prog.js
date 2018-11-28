@@ -1,15 +1,39 @@
 $(document).ready(function () {
-
+    var b = 0;
     var chk = 0;
     var vrb;
+
+
+
+
+
+
 
     $("#btn5").click(function () {
         $("#inpt").val(5);
 
-        vrb = null;
 
-        txt_chg();
+        clearInterval(vrb);
+        b = 5;
+        vrb = setInterval(function () {
 
+            b--;
+
+
+            if (b == 0) {
+
+                $(".qstn").removeClass("show").addClass("vsbl");
+
+
+            }
+            if (b < 0) {
+                clearInterval(vrb);
+            }
+            else {
+                $("#inpt").val(b);
+            }
+
+        },1000)
 
 
 
@@ -17,67 +41,112 @@ $(document).ready(function () {
     });
 
 
-    $("#btn10").click(function () {
-        $("#inpt").val(10);
-        txt_chg();
 
 
-    });
+
+    $("#chck_ans").click(function () {
+
+        var inpts = $(".inp_ans");
+
+        var answr = $(".qstn");
+
+        
+
+        for (i = 0; i < inpts.length; i++) {
+
+            if (inpts[i].value == answr[i].innerText) {
+
+                inpts[i].classList.Name = inpts[i].classList.remove("back_green", "back_red")
+                
+                inpts[i].classList.Name = inpts[i].classList.add("back_green");
+                //inpts[i].removeClass("back_green back_red").addClass("back_green");
+            }
+            else {
+
+                inpts[i].classList.Name = inpts[i].classList.remove("back_green","back_red")
+
+                inpts[i].classList.Name = inpts[i].classList.add("back_red");
+
+            }
 
 
-    $("#btn20").click(function () {
-        $("#inpt").val(20);
+        }
 
 
-      brb=  setInterval(function(){
-            
-           
 
-        })
-    });
-
-    $("#inpt").change(function () {
-
-        alert("dsdsds");
     })
 
 
 
-    // var txt =function  text_changer() { 
 
-    //   var b=$("#inpt").val();
-    //   b--;
-
-    //   if(b>=0){
-    //     $("#inpt").val(b--);
-    //   }
-    //  if(b==0){
-    //      return false;
-    //  }
-
-    //  } 
+   
 
 
-    var txt = function txt_chg() {
-        var b = $("#inpt").val();
-
+    $("#btn10").click(function () {
+        $("#inpt").val(10);
+        clearInterval(vrb);
+        b = 10;
         vrb = setInterval(function () {
-            //#endregion
+
             b--;
-            if (b >= 0) {
+            if (b == 0) {
 
-                $("#inpt").val(b)
-            } else {
+                $(".qstn").removeClass("show").addClass("vsbl");
 
+
+            }
+            if (b < 0) {
                 clearInterval(vrb);
             }
+            else {
+                $("#inpt").val(b);
+            }
 
-        }, 1000)
+        },1000)
+
+
+    });
+
+
+    $("#btn20").click(function (b) {
+        $("#inpt").val(20);
+
+        b = 20;
 
 
 
-    }
+        vrb = setInterval(function () {
 
+            b--;
+            if (b == 0) {
+
+                $(".qstn").removeClass("show").addClass("vsbl");
+
+
+            }
+
+            if (b < 0) {
+                clearInterval(vrb);
+            }
+            else {
+                $("#inpt").val(b);
+            }
+
+        },1000)
+    });
+
+
+
+
+    
+
+
+    
+
+    
+
+
+   
 
 
 

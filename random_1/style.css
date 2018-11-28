@@ -14,16 +14,23 @@ body {
     overflow: hidden;
 }
 .inp_ans{
-
+   
     text-align: center;
     overflow: hidden;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-  
+   color:black;
     font-size: 40px;
 }
 
+.back_green {
+    background-color: lightgreen;
+}
+
+.back_red {
+    background-color:red;
+}
 .row-check{
     padding-top:10%;
 }   
@@ -66,7 +73,10 @@ border-width: 2px; */
     padding: 10% 20%;
     
 }
+.bdy {
 
+    padding-top:10%;
+}
 
 p{
  
